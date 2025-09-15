@@ -1,5 +1,5 @@
 {
-  "name": "docus-starter",
+  "name": "Wa Mantap",
   "scripts": {
     "dev": "nuxt dev --extends docus",
     "build": "nuxt build --extends docus"
@@ -9,5 +9,8 @@
     "better-sqlite3": "^12.2.0",
     "docus": "latest",
     "nuxt": "^4.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.18.1"
   }
 }
