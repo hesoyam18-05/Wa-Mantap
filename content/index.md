@@ -1,123 +1,128 @@
 ---
 seo:
-  title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
-    design out of the box. Docus brings together the best of the Nuxt ecosystem.
-    Powered by Nuxt UI Pro.
+  title: Wa Mantap - Layanan WhatsApp Terintegrasi
+  description: Wa Mantap memudahkan komunikasi, informasi, dan pelayanan publik langsung melalui WhatsApp.
 ---
 
 ::u-page-hero
 #title
-Write beautiful docs with Markdown
+Selamat datang di **Wa Mantap**
 
 #description
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
-
-Docus brings the best of the Nuxt ecosystem into one CLI.
+Layanan WhatsApp yang praktis, cepat, dan mudah digunakan untuk mengakses berbagai informasi dan pelayanan publik.  
+Semua ada di satu aplikasi WhatsApp tanpa ribet!
 
 #links
   :::u-button
   ---
   color: neutral
   size: xl
-  to: /getting-started/installation
+  to: /wa-mantap/pengenalan
   trailing-icon: i-lucide-arrow-right
   ---
-  Mulai
+  Mulai Gunakan
   :::
 
   :::u-button
   ---
   color: neutral
-  icon: simple-icons-github
+  icon: simple-icons-whatsapp
   size: xl
-  to: https://github.com/nuxt-ui-pro/docus
+  to: https://wa.me/6282289999034
   variant: outline
   ---
-  Star on GitHub
+  Chat di WhatsApp
   :::
 ::
 
 ::u-page-section
 #title
-Shipped with many features
+Kenapa memilih Wa Mantap?
 
 #features
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com
+  icon: i-lucide-message-square
   ---
   #title
-  Built with [Nuxt 4]{.text-primary}
+  Mudah digunakan
   
   #description
-  Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
+  Cukup lewat WhatsApp, tanpa perlu aplikasi tambahan. Semua layanan dapat diakses langsung melalui chat.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/
+  icon: i-lucide-bolt
   ---
   #title
-  Powered by [Nuxt UI Pro]{.text-primary}
+  Cepat & Praktis
   
   #description
-  Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI Pro to give you the best docs writing experience with zero boilerplate, just focus on your content.
+  Balasan otomatis dengan navigasi menu yang jelas, membuat pengguna lebih mudah mendapatkan informasi.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com
+  icon: i-lucide-database
   ---
   #title
-  Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
+  Terintegrasi
   
   #description
-  The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
+  Menghubungkan berbagai layanan publik, data, dan informasi hanya dalam satu pintu masuk.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com/docs/guide/directory-structure/app-config
+  icon: i-lucide-users
   ---
   #title
-  Customize with [Nuxt App Config]{.text-primary}
+  Ramah Pengguna
   
   #description
-  Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+  Dibuat untuk masyarakat, dengan antarmuka sederhana agar semua kalangan bisa menggunakannya.
+  :::
+::
+
+::u-page-section
+#title
+Fitur Utama Wa Mantap
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-book
+  to: /wa-mantap/pengenalan
+  ---
+  #title
+  Pengenalan & Cara Pakai
+  
+  #description
+  Panduan lengkap menggunakan Wa Mantap untuk pertama kali.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com/studio
+  icon: i-lucide-globe
+  to: /wa-mantap/layanan
   ---
   #title
-  Collaborate on [Nuxt Studio]{.text-primary}
+  Akses Layanan
   
   #description
-  Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+  Dari layanan informasi, pengaduan, hingga permintaan dokumen, semuanya bisa melalui WhatsApp.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/components/content-search
+  icon: i-lucide-search
+  to: /wa-mantap/pencarian
   ---
   #title
-  Built-in navigation and [full-text search]{.text-primary}
+  Pencarian Cepat
   
   #description
-  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
+  Temukan informasi yang kamu butuhkan dengan mudah lewat menu pencarian.
   :::
 ::

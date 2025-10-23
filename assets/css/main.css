@@ -1,0 +1,110 @@
+/* -- TEMA BIRU DENGAN SELECTOR LEBIH SPESIFIK -- */
+
+/* Menargetkan .search-highlight yang ada di dalam elemen <main> */
+main .search-highlight {
+  background-color: #bfdbfe !important; /* Biru muda */
+  background-image: linear-gradient(to right, #bfdbfe, #93c5fd) !important; /* Gradasi biru muda */
+  padding: 2px 4px !important;
+  border-radius: 3px !important;
+  font-weight: 500 !important;
+  color: #1e3a8a !important; /* Biru tua untuk teks agar kontras */
+  box-shadow: 0 0 0 2px rgba(147, 197, 253, 0.4) !important; /* Bayangan biru */
+}
+
+/* Animasi untuk highlight pertama */
+main .search-highlight:first-of-type {
+  animation: pulse-highlight 1.5s ease-in-out;
+}
+
+@keyframes pulse-highlight {
+  0%, 100% { 
+    background-color: #bfdbfe; 
+  }
+  50% { 
+    background-color: #93c5fd;
+    box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.6);
+  }
+}
+
+/* Tema biru untuk mode gelap dengan selector lebih spesifik */
+html.dark main .search-highlight {
+  background-color: #1e40af !important; /* Biru gelap */
+  background-image: linear-gradient(to right, #1e40af, #1d4ed8) !important; /* Gradasi biru gelap */
+  color: #dbeafe !important; /* Biru sangat terang untuk teks */
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.5) !important; /* Bayangan biru gelap */
+}
+
+/* CSS untuk Scroll tabs-item */
+[role="tablist"] {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  gap: 0.25rem !important;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+/* Biarkan tab menyesuaikan lebar kontennya */
+[role="tablist"] > [role="tab"] {
+  flex: 0 0 auto !important;
+  min-width: fit-content !important;
+  text-overflow: ellipsis;
+  padding-inline: 1rem !important;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: color 0.2s ease; /* Animasi perubahan warna text */
+}
+
+/* Underline untuk tab aktif dengan animasi sliding */
+[role="tab"][aria-selected="true"]::after,
+[role="tab"][data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px 2px 0 0;
+  animation: slideIn 0.3s ease;
+}
+
+/* Animasi slide in dari kiri */
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Alternatif: Jika ingin underline bergerak smooth antar tab */
+[role="tablist"]::before {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  height: 2px;
+  background-color: var(--color-primary, #3b82f6);
+  border-radius: 2px 2px 0 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.tabs-item {
+  display: block !important; /* pastikan semua tab dirender */
+}
+.tabs-item:not(.is-active) {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
